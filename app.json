@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "motodoc",
+    "slug": "motodoc",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#070B14"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Motodoc, motor arızalarını teşhis etmek için kameranızı kullanır.",
+        "NSMicrophoneUsageDescription": "Motodoc, motor sesini dinleyip arıza analizi yapmak için mikrofonunuza erişim sağlar.",
+        "NSPhotoLibraryUsageDescription": "Motodoc, galerinizdeki motor fotoğraflarını yapay zeka ile incelemek için fotoğraflarınıza erişir."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#070B14"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.anonymous.motodoc"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Motodoc, motor fotoğraflarını incelemek için galerinize erişim izni ister.",
+          "cameraPermission": "Motodoc, arıza tespiti için kameranızı kullanır."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Motodoc, motor sesini analiz etmek için mikrofon izni ister."
+        }
+      ]
+    ]
+  }
+}
